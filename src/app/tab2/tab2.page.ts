@@ -5,4 +5,23 @@ import { Component } from '@angular/core';
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss']
 })
-export class Tab2Page {}
+export class Tab2Page {
+	dataType:string = '';
+	result:any;
+
+	validateDataType() {
+		if( this.dataType == 'true' || this.dataType == 'false' ){
+			return('Bolean data');
+		}
+		else if( Number(this.dataType) ){
+			return('Number data');
+		}
+		else if( this.dataType == '' ){
+			return('Data not valid');
+		}
+		else{
+			return('String data');
+		}
+	}
+
+}

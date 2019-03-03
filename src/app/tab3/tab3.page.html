@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ejercicio 2
+      Ejercicio 3
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,33 +12,40 @@
       <ion-img src="/assets/shapes.svg"></ion-img>
       <ion-card-header>
         <ion-card-subtitle>Guia 3</ion-card-subtitle>
-        <ion-card-title>Ejercicio 2</ion-card-title>
+        <ion-card-title>Ejercicio 3</ion-card-title>
         <ion-card-title>  </ion-card-title>
       </ion-card-header>
       <ion-card-content>
       
-        <p> Otra vista que solicite un dato y valide que tipo de dato ingreso (booleano, string, numero). </p>
+        <p> ¿Como realizo el siguiente ejercicio con templeate literal?. </p>
 
       </ion-card-content>
     </ion-card>
 
-    <form (ngSubmit)="validateDataType()">
+    <!--
+      <ion-button (click)="login()">
+        enviar
+        <ion-icon slot="end" name="star"></ion-icon>
+      </ion-button> 
+    -->
+    
+			<!--<form (ngSubmit)="login()">-->
 
-      <h1>
-        {{validateDataType()}}
-      </h1>
-
-
-      <ion-item>
-        <ion-label>Dato:</ion-label>
-        <ion-input type="text" [(ngModel)]="dataType" name="dataType"></ion-input>
-      </ion-item>
-
-      <button ion-button type="submit" block>Calcular</button>
-
-
-    </form>
-
+          <h1>
+            {{ dato }}
+          </h1>
+  
+          <ion-item>
+          
+            <ion-label>nombre:</ion-label>
+            <ion-input type="text" [(ngModel)]="dato" name="nombre"></ion-input>
+          </ion-item>
+  
+          <button ion-button type="submit" block>dar saludo</button>
+  
+  
+        <!--</form>-->
+    
   
 
 

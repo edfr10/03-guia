@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class Tab3Page {
 //Atributos
 // declara las variables de las clases
-public dato;
+public dato ;
 
 //Constuctor
 
@@ -26,11 +26,6 @@ login(){
 
 
 
-
-
-
-
-  
 // let nombre = function (nombre) {
   
 //     return "hola me llamo" + nombre;

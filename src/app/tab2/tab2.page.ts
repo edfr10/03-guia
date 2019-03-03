@@ -10,7 +10,7 @@ export class Tab2Page {
 	result:any;
 
 	validateDataType() {
-		if(( this.dataType == 'true' || this.dataType == 'false')  ||  ( this.dataType == 'TRUE' || this.dataType == 'FALSE')){
+		if(( this.dataType == 'true' || this.dataType == 'false')  ||  ( this.dataType == 'TRUE' || this.dataType == 'FALSE')){ 
 			return('Bolean data');
 		}
 		else if( Number(this.dataType) ){

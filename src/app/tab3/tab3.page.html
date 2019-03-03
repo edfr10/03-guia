@@ -1,9 +1,46 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Ejercicio 2
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+
+    <ion-card class="welcome-card">
+      <ion-img src="/assets/shapes.svg"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>Guia 3</ion-card-subtitle>
+        <ion-card-title>Ejercicio 2</ion-card-title>
+        <ion-card-title>  </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+      
+        <p> Otra vista que solicite un dato y valide que tipo de dato ingreso (booleano, string, numero). </p>
+
+      </ion-card-content>
+    </ion-card>
+
+    <form (ngSubmit)="validateDataType()">
+
+      <h1>
+        {{validateDataType()}}
+      </h1>
+
+
+      <ion-item>
+        <ion-label>Dato:</ion-label>
+        <ion-input type="text" [(ngModel)]="dataType" name="dataType"></ion-input>
+      </ion-item>
+
+      <button ion-button type="submit" block>Calcular</button>
+
+
+    </form>
+
+  
+
+
+
+</ion-content>
